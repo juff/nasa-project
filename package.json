@@ -6,7 +6,8 @@
 	"scripts": {
 		"install-server": "cd server && npm i",
 		"install-client": "cd client && npm i",
-		"install": "run-p install-server install-client",
+		"install-windows": "run-p install-server install-client",
+		"install": "npm run install-server && npm run install-client",
 		"client": "cd client && npm start",
 		"server": "cd server && npm run watch",
 		"watch": "run-p server client",
